@@ -1,0 +1,10 @@
+import random
+
+sayi = random.randint(1, 10)  # 1-10 arası rastgele sayı
+tahmin = int(input("1 ile 10 arasında bir sayı tahmin et: "))
+
+while tahmin != sayi:
+    print("Bilemedin ağam.")
+    tahmin = int(input("Tekrar dene: "))
+
+print("Doğru bildin! Tebrikler ağam.")
